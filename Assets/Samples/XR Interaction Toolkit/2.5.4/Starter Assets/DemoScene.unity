@@ -2219,7 +2219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &671440177
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2264,7 +2264,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5f49ce02c2c257a44a319566ec15c41d, type: 2}
+  - {fileID: 2100000, guid: 9aaa3fe9d776e5d40b24afcfb4435e26, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
