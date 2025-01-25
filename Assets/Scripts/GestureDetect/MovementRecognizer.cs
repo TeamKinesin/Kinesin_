@@ -19,8 +19,8 @@ public class MovementRecognizer : MonoBehaviour
     public string newGestureName;
 
     public float recognitionThreshold = 0.9f;
-   
-   [System.Serializable]
+
+    [System.Serializable]
     public class UnityStringEvent : UnityEvent<string> { }
     public UnityStringEvent OnRecognized;
 
@@ -28,33 +28,43 @@ public class MovementRecognizer : MonoBehaviour
     private bool isMoving = false;
     private List<Vector3> positionList = new List<Vector3>();
 
-   
     void Start()
     {
-        string[] gestureFiles = Directory.GetFiles(Application.persistentDataPath, "*.xml");
-        foreach (var item in gestureFiles )
+        // (1) "Assets/GestureData" 폴더 경로
+        string gesturePath = Application.dataPath + "/GestureData";
+
+        // 폴더가 없으면 생성
+        if (!Directory.Exists(gesturePath))
+        {
+            Directory.CreateDirectory(gesturePath);
+        }
+
+        // (2) 제스처 파일(.xml) 로드
+        string[] gestureFiles = Directory.GetFiles(gesturePath, "*.xml");
+        foreach (var item in gestureFiles)
         {
             trainingSet.Add(GestureIO.ReadGestureFromFile(item));
         }
     }
 
-    
     void Update()
     {
-        UnityEngine.XR.Interaction.Toolkit.InputHelpers.IsPressed(InputDevices.GetDeviceAtXRNode(inputSource), inputButton, out bool isPressed, inputThreshold);
+        UnityEngine.XR.Interaction.Toolkit.InputHelpers.IsPressed(
+            InputDevices.GetDeviceAtXRNode(inputSource),
+            inputButton,
+            out bool isPressed,
+            inputThreshold
+        );
         
-        //start The Movement
-        if(!isMoving && isPressed)
+        if (!isMoving && isPressed)
         {
             StartMovement();
         }
-        //Ending The Movement
-        else if(isMoving && !isPressed)
+        else if (isMoving && !isPressed)
         {
             EndMovement();
         }
-        //updating The Movement
-        else if(isMoving && isPressed)
+        else if (isMoving && isPressed)
         {
             UpdateMovement();
         }
@@ -65,43 +75,47 @@ public class MovementRecognizer : MonoBehaviour
         isMoving = true;
         positionList.Clear();
         positionList.Add(movementSource.position);
-        if(debugCubePrefab) 
-            Destroy( Instantiate(debugCubePrefab,movementSource.position,Quaternion.identity),3);
+
+        if (debugCubePrefab)
+        {
+            Destroy(Instantiate(debugCubePrefab, movementSource.position, Quaternion.identity), 3);
+        }
     }
 
     void EndMovement()
     {
         isMoving = false;
 
-        //걍 한국어로 해야겠다. 포지션 리스트로 부터 제스쳐 크리에이팅 
+        // positionList -> Point[]
         Point[] pointArray = new Point[positionList.Count];
-
-        for (int i = 0; i< positionList.Count; i++)
+        for (int i = 0; i < positionList.Count; i++)
         {
             Vector2 screenPoint = Camera.main.WorldToScreenPoint(positionList[i]);
-            pointArray[i] = new Point(screenPoint.x,screenPoint.y,0);
+            pointArray[i] = new Point(screenPoint.x, screenPoint.y, 0);
         }
 
         Gesture newGesture = new Gesture(pointArray);
 
-        //새로운 제스쳐의 트레이닝 셋
-
-        if(creationMode)
+        if (creationMode)
         {
+            // (3) 제스처 저장
             newGesture.Name = newGestureName;
             trainingSet.Add(newGesture);
 
-            string fileName = Application.persistentDataPath + "/" + newGestureName + ".xml";
-            GestureIO.WriteGesture(pointArray,newGestureName, fileName);
+            // "Assets/GestureData/[제스처이름].xml" 로 저장
+            string fileName = Application.dataPath + "/GestureData/" + newGestureName + ".xml";
+            GestureIO.WriteGesture(pointArray, newGestureName, fileName);
+
+            Debug.Log("Gesture Saved: " + fileName);
         }
-        //recognize
         else
         {
+            // (4) 인식
             Result result = PointCloudRecognizer.Classify(newGesture, trainingSet.ToArray());
 
-            if(result.Score > recognitionThreshold)
+            if (result.Score > recognitionThreshold)
             {
-                Debug.Log(result.GestureClass + result.Score);
+                Debug.Log(result.GestureClass + " " + result.Score);
                 OnRecognized.Invoke(result.GestureClass);
             }
         }
@@ -110,11 +124,13 @@ public class MovementRecognizer : MonoBehaviour
     void UpdateMovement()
     {
         Vector3 lastPosition = positionList[positionList.Count - 1];
-        if(Vector3.Distance(movementSource.position,lastPosition) > newPositionThresholdDistance) 
+        if (Vector3.Distance(movementSource.position, lastPosition) > newPositionThresholdDistance)
         {
             positionList.Add(movementSource.position);
-            if(debugCubePrefab) 
-                Destroy( Instantiate(debugCubePrefab,movementSource.position,Quaternion.identity),3);
+            if (debugCubePrefab)
+            {
+                Destroy(Instantiate(debugCubePrefab, movementSource.position, Quaternion.identity), 3);
+            }
         }
-    }    
+    }
 }
