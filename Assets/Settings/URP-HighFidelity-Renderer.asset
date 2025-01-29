@@ -56,7 +56,7 @@ MonoBehaviour:
     tracingMode: 0
     stepStrideLength: 0.03
     maxSteps: 128
-    downSample: 0
+    downSample: 1
     minSmoothness: 0.5
     reflectSky: 1
     ditherType: 1
