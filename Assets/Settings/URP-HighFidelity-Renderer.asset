@@ -124,6 +124,41 @@ MonoBehaviour:
   stripUnityChromaticAberration: 0
   stripUnityDistortion: 0
   stripUnityDebugVariants: 0
+--- !u!114 &-3120053712981581776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cba173a5237238a4496bd059bc5e0dd9, type: 3}
+  m_Name: CustomRenderPassFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    material: {fileID: 2100000, guid: 28848e0b5cdf94e4c852763c8d7b67b0, type: 2}
+    renderPassEvent: 550
+--- !u!114 &-2798750705592246435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769852fb426db0b44910e6aff04c519c, type: 3}
+  m_Name: SonarFxFeature
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    sonarMaterial: {fileID: 2100000, guid: d28c2b9695dd19743ac366cf3ee5d582, type: 2}
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    renderPassEvent: 550
 --- !u!114 &-1878332245247344467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +232,8 @@ MonoBehaviour:
   - {fileID: -7371557831065587576}
   - {fileID: -7177335397739215503}
   - {fileID: -7946479560035539176}
-  m_RendererFeatureMap: adc0de57c6d2eee595bd7df0b5168dc0a8625bdccbe83e938830167635f7b29971c5ea9f7bfb649c18e72d41f16eb891
+  - {fileID: -2798750705592246435}
+  m_RendererFeatureMap: adc0de57c6d2eee595bd7df0b5168dc0a8625bdccbe83e938830167635f7b29971c5ea9f7bfb649c18e72d41f16eb8915ddf4cca0fd728d9
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}

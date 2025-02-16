@@ -92,7 +92,7 @@ MonoBehaviour:
   active: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.024
+    m_Value: 0.018
 --- !u!114 &-4818817791052436566
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -130,16 +130,16 @@ MonoBehaviour:
   active: 0
   scanLineJitter:
     m_OverrideState: 1
-    m_Value: 0.181
+    m_Value: 0.084
   verticalJump:
     m_OverrideState: 1
-    m_Value: 0.426
+    m_Value: 0.181
   horizontalShake:
     m_OverrideState: 1
-    m_Value: 0.74
+    m_Value: 0.048
   colorDrift:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.133
 --- !u!114 &-3494930629202408615
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   skipIterations:
     m_OverrideState: 1
     m_Value: 1
@@ -611,6 +611,7 @@ MonoBehaviour:
   - {fileID: 1730528741159066193}
   - {fileID: -1981820946571585401}
   - {fileID: -8046873625476881249}
+  - {fileID: 4928311758244223397}
 --- !u!114 &1730528741159066193
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -785,7 +786,7 @@ MonoBehaviour:
     m_Value: 1.85
   brightness:
     m_OverrideState: 1
-    m_Value: 1.05
+    m_Value: 0.94
   contrast:
     m_OverrideState: 1
     m_Value: 1.02
@@ -819,7 +820,7 @@ MonoBehaviour:
     m_Value: 0.25
   bloomThreshold:
     m_OverrideState: 1
-    m_Value: 0.75
+    m_Value: 0.9
   bloomConservativeThreshold:
     m_OverrideState: 1
     m_Value: 0
@@ -1549,6 +1550,49 @@ MonoBehaviour:
   SceneSeed:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &4928311758244223397
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf1a0b3000fe984a96fa23c7785ee3e, type: 3}
+  m_Name: SonarFxVolume
+  m_EditorClassIdentifier: 
+  active: 0
+  baseColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 0}
+  waveColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0, b: 0, a: 0}
+  waveAmplitude:
+    m_OverrideState: 1
+    m_Value: 2.78
+  waveExponent:
+    m_OverrideState: 1
+    m_Value: 46.2
+  waveInterval:
+    m_OverrideState: 1
+    m_Value: 50.3
+  waveSpeed:
+    m_OverrideState: 1
+    m_Value: 40.8
+  addColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.33962262, g: 0.24190101, b: 0.24190101, a: 1}
+  mode:
+    m_OverrideState: 0
+    m_Value: 1
+  direction:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0, z: 1}
+  origin:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 1}
 --- !u!114 &5151793864683900003
 MonoBehaviour:
   m_ObjectHideFlags: 3

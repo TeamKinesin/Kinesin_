@@ -1311,6 +1311,7 @@ MonoBehaviour:
   - {fileID: 4812363927393792131}
   - {fileID: -1411986395844133685}
   - {fileID: 7411373432051602572}
+  - {fileID: 3029203140427350528}
 --- !u!114 &382708481726701635
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1437,6 +1438,49 @@ MonoBehaviour:
   bladeRotation:
     m_OverrideState: 1
     m_Value: 0
+--- !u!114 &3029203140427350528
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcf1a0b3000fe984a96fa23c7785ee3e, type: 3}
+  m_Name: SonarFxVolume
+  m_EditorClassIdentifier: 
+  active: 1
+  baseColor:
+    m_OverrideState: 1
+    m_Value: {r: 0.2, g: 0.2, b: 0.2, a: 0}
+  waveColor:
+    m_OverrideState: 1
+    m_Value: {r: 1, g: 0.2, b: 0.2, a: 0}
+  waveAmplitude:
+    m_OverrideState: 1
+    m_Value: 2
+  waveExponent:
+    m_OverrideState: 1
+    m_Value: 22
+  waveInterval:
+    m_OverrideState: 1
+    m_Value: 20
+  waveSpeed:
+    m_OverrideState: 1
+    m_Value: 10
+  addColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  mode:
+    m_OverrideState: 1
+    m_Value: 0
+  direction:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 1}
+  origin:
+    m_OverrideState: 1
+    m_Value: {x: 0, y: 0, z: 0}
 --- !u!114 &3979140858143258193
 MonoBehaviour:
   m_ObjectHideFlags: 3

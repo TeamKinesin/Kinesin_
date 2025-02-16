@@ -421,6 +421,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VisualEffectGraph.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VisualEffectGraph.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.ref.dll"
@@ -456,6 +458,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/URPGlitch.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/VFXGraph.OutputEventHandlers.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/VFXGraph.OutputEventHandlers.ref.dll"
 -analyzer:"C:/Program Files/Unity 2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity 2023.2.20f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
@@ -473,6 +477,9 @@
 "Assets/DownloadAsset/VolumetricLights/Editor/VolumetricLightProfileEditor.cs"
 "Assets/DownloadAsset/VolumetricLights/Editor/VolumetricLightsRenderFeatureEditor.cs"
 "Assets/DownloadAsset/VolumetricLights/Editor/VolumetricLightsTranslucencyEditor.cs"
+"Assets/Scripts/SonarFx/Reaktion/Editor/Utility/ConstantMotionEditor.cs"
+"Assets/Scripts/SonarFx/Reaktion/Editor/Utility/JitterMotionEditor.cs"
+"Assets/Scripts/SonarFx/SonarFx/Editor/SonarFxEditor.cs"
 "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs"
 -langversion:9.0
 
