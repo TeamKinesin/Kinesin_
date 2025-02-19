@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\Mesh3DPenPaletteColor.cs" />
     <Compile Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Scripts\ToggleDoF.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFx\SonarFx.cs" />
+    <Compile Include="Assets\Scripts\1 Collection of step-by-step scripts\1 Intro\IntroText.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\Result.cs" />
     <Compile Include="Assets\DownloadAsset\VolumetricLights\Demos\Temple\Scripts\PlayerController.cs" />
     <Compile Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Scripts\CameraAnimator.cs" />

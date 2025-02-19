@@ -157,7 +157,7 @@ MonoBehaviour:
     sonarMaterial: {fileID: 2100000, guid: d28c2b9695dd19743ac366cf3ee5d582, type: 2}
     layerMask:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 128
     renderPassEvent: 550
 --- !u!114 &-1878332245247344467
 MonoBehaviour:

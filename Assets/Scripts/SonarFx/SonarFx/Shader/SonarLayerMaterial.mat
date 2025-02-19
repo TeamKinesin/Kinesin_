@@ -41,7 +41,7 @@ Material:
     m_Floats:
     - _RingRadius: 1
     - _RingWidth: 0.1
-    - _SonarWaveStartTime: 3.901267
+    - _SonarWaveStartTime: 999999
     - _WaveRadius: 3
     - _WaveThickness: 0.5
     m_Colors:
