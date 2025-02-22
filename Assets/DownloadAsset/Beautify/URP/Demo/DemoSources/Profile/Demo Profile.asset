@@ -820,13 +820,13 @@ MonoBehaviour:
     m_Value: 0.25
   bloomThreshold:
     m_OverrideState: 1
-    m_Value: 0.9
+    m_Value: 0.7
   bloomConservativeThreshold:
     m_OverrideState: 1
     m_Value: 0
   bloomSpread:
     m_OverrideState: 1
-    m_Value: 0.432
+    m_Value: 0.243
   bloomMaxBrightness:
     m_OverrideState: 1
     m_Value: 1000
@@ -1222,8 +1222,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   eyeAdaptation:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 1
   eyeAdaptationMinExposure:
     m_OverrideState: 1
     m_Value: 0.2
@@ -1344,7 +1344,7 @@ MonoBehaviour:
     m_Value: 0
   nightVision:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   nightVisionColor:
     m_OverrideState: 1
     m_Value: {r: 0.5, g: 1, b: 0.5, a: 0.5}
