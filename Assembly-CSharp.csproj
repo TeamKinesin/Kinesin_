@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\PortalableObject.cs" />
     <Compile Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Scripts\SphereAnimator.cs" />
     <Compile Include="Assets\Scripts\EatFoodAction\Consumable.cs" />
+    <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\SmoothPortalMover.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\GenerateLinesForMesh3DPens.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\2 Tutorial\Step3Sonar.cs" />

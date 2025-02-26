@@ -46,7 +46,7 @@ Material:
     - _PostVolume: 1
     - _RingRadius: 1
     - _RingWidth: 0.1
-    - _SonarWaveStartTime: 37.308247
+    - _SonarWaveStartTime: 27.02902
     - _WaveRadius: 3
     - _WaveThickness: 0.5
     m_Colors:

@@ -498,6 +498,7 @@
 "Assets/Scripts/PotalCamera/PotalScript/Scripts/PortalCamera.cs"
 "Assets/Scripts/PotalCamera/PotalScript/Scripts/PortalPair.cs"
 "Assets/Scripts/PotalCamera/PotalScript/Scripts/PortalPlacement.cs"
+"Assets/Scripts/PotalCamera/PotalScript/Scripts/SmoothPortalMover.cs"
 "Assets/Scripts/ShareMaterial/ShareMaterial.cs"
 "Assets/Scripts/SonarFx/Reaktion/Utility/ConstantMotion.cs"
 "Assets/Scripts/SonarFx/Reaktion/Utility/JitterMotion.cs"
