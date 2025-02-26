@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 01fb3b1d579f061428ea512efc6379f6
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Inter
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304968
+  packageName: Doodle TMP VFX Pack -TextMeshPro
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/StellaRabbitStudio/TMP VFX/Fonts/Inter-VariableFont_opsz,wght.ttf
+  uploadId: 724125

@@ -5,6 +5,7 @@ using UnityEngine.XR;
 using PDollarGestureRecognizer;
 using System.IO;
 using UnityEngine.Events;
+using JetBrains.Annotations;
 
 public class MovementRecognizer : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class MovementRecognizer : MonoBehaviour
     private List<Gesture> trainingSet = new List<Gesture>();
     private bool isMoving = false;
     private List<Vector3> positionList = new List<Vector3>();
+
+    // -> 쓰기위해 선언.
+    public Result result;
 
     void Start()
     {
@@ -111,7 +115,7 @@ public class MovementRecognizer : MonoBehaviour
         else
         {
             // (4) 인식
-            Result result = PointCloudRecognizer.Classify(newGesture, trainingSet.ToArray());
+            result = PointCloudRecognizer.Classify(newGesture, trainingSet.ToArray());
 
             if (result.Score > recognitionThreshold)
             {

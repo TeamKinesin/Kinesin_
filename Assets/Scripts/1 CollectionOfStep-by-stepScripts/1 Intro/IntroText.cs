@@ -10,6 +10,10 @@ public class IntroText : MonoBehaviour
     [SerializeField] private float fadeInDuration = 5f;    // 페이드 인에 걸리는 시간
     [SerializeField] private float stayDuration = 2f;        // 텍스트가 완전히 보인 상태로 유지되는 시간
     [SerializeField] private float fadeOutDuration = 1.3f;     // 페이드 아웃에 걸리는 시간
+    
+     [Header("인트로 진행후 코드")] 
+    [SerializeField] GameObject introOff;
+    [SerializeField] GameObject TutorialOn; 
 
     void Start()
     {
@@ -50,7 +54,16 @@ public class IntroText : MonoBehaviour
         }
         // 완전히 안보이도록 설정
         SetAlpha(0f);
+
+        //-> 진행코드를 여기다 적을게요.
+         // 대기 시간 추가 (예: 2초)
+        yield return new WaitForSeconds(2f);
+
+        // 진행 코드
         gameObject.SetActive(false);
+        introOff.SetActive(false);
+        TutorialOn.SetActive(true);
+        
     }
 
     // 텍스트의 알파값을 설정하는 헬퍼 함수

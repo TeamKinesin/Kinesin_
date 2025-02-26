@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 0a14a8b1c1d044d48a120f9819b32bf1
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Rubik Doodle Shadow
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304968
+  packageName: Doodle TMP VFX Pack -TextMeshPro
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/StellaRabbitStudio/TMP VFX/Fonts/RubikDoodleShadow-Regular.ttf
+  uploadId: 724125

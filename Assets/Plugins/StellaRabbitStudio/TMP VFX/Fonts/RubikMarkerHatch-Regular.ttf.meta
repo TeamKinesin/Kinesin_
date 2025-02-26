@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: 4b04dbd27f386f144944dc39fe3ccd07
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Rubik Marker Hatch
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304968
+  packageName: Doodle TMP VFX Pack -TextMeshPro
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/StellaRabbitStudio/TMP VFX/Fonts/RubikMarkerHatch-Regular.ttf
+  uploadId: 724125

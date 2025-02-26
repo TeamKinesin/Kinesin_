@@ -1402,7 +1402,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj" />
     <ProjectReference Include="Assembly-CSharp.csproj" />
+    <ProjectReference Include="Assembly-CSharp-Editor-firstpass.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
     <ProjectReference Include="VFXGraph.OutputEventHandlers.Editor.csproj" />
     <ProjectReference Include="VFXGraph.OutputEventHandlers.csproj" />

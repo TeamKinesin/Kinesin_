@@ -545,8 +545,7 @@ namespace UnityEditor.VFX
                         throw new Exception(string.Format("The SRP of asset type {0} is already registered ({1})", SRPAssetTypeStr, srpBinders[SRPAssetTypeStr].GetType()));
                     srpBinders[SRPAssetTypeStr] = binder;
 
-                    if (VFXViewPreference.advancedLogs)
-                        Debug.Log(string.Format("Register {0} for VFX", SRPAssetTypeStr));
+                    
                 }
                 catch (Exception e)
                 {

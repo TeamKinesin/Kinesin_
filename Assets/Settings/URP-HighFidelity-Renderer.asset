@@ -124,6 +124,48 @@ MonoBehaviour:
   stripUnityChromaticAberration: 0
   stripUnityDistortion: 0
   stripUnityDebugVariants: 0
+--- !u!114 &-4540300844404218822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3d386ba5cd94485973aee1479b272e, type: 3}
+  m_Name: Stencil Mask 1 opaque
+  m_EditorClassIdentifier: 
+  m_Active: 1
+  settings:
+    passTag: Stencil Mask 1 opaque
+    Event: 300
+    filterSettings:
+      RenderQueueType: 0
+      LayerMask:
+        serializedVersion: 2
+        m_Bits: 768
+      PassNames: []
+    overrideMaterial: {fileID: 0}
+    overrideMaterialPassIndex: 0
+    overrideShader: {fileID: 0}
+    overrideShaderPassIndex: 0
+    overrideMode: 1
+    overrideDepthState: 0
+    depthCompareFunction: 4
+    enableWrite: 1
+    stencilSettings:
+      overrideStencilState: 1
+      stencilReference: 1
+      stencilCompareFunction: 3
+      passOperation: 0
+      failOperation: 0
+      zFailOperation: 0
+    cameraSettings:
+      overrideCamera: 0
+      restoreCamera: 1
+      offset: {x: 0, y: 0, z: 0, w: 0}
+      cameraFieldOfView: 60
 --- !u!114 &-3120053712981581776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,8 +275,9 @@ MonoBehaviour:
   - {fileID: -7177335397739215503}
   - {fileID: -7946479560035539176}
   - {fileID: -2798750705592246435}
-  m_RendererFeatureMap: adc0de57c6d2eee595bd7df0b5168dc0a8625bdccbe83e938830167635f7b29971c5ea9f7bfb649c18e72d41f16eb8915ddf4cca0fd728d9
-  m_UseNativeRenderPass: 1
+  - {fileID: -4540300844404218822}
+  m_RendererFeatureMap: adc0de57c6d2eee595bd7df0b5168dc0a8625bdccbe83e938830167635f7b29971c5ea9f7bfb649c18e72d41f16eb8915ddf4cca0fd728d93a64e103709cfdc0
+  m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -259,7 +302,7 @@ MonoBehaviour:
   m_AssetVersion: 2
   m_OpaqueLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 503
   m_TransparentLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -271,8 +314,8 @@ MonoBehaviour:
     failOperation: 0
     zFailOperation: 0
   m_ShadowTransparentReceive: 1
-  m_RenderingMode: 1
-  m_DepthPrimingMode: 2
+  m_RenderingMode: 0
+  m_DepthPrimingMode: 0
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1

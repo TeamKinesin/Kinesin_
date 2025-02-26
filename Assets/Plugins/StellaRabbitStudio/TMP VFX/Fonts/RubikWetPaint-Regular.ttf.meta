@@ -1,0 +1,28 @@
+fileFormatVersion: 2
+guid: c3a14787cda90864eacd600c89b2f3c2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Rubik Wet Paint
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304968
+  packageName: Doodle TMP VFX Pack -TextMeshPro
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/StellaRabbitStudio/TMP VFX/Fonts/RubikWetPaint-Regular.ttf
+  uploadId: 724125

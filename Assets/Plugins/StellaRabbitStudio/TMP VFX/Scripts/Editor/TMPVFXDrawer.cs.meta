@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 78f4384a691fc744a906ae5d4d744915
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 304968
+  packageName: Doodle TMP VFX Pack -TextMeshPro
+  packageVersion: 1.0
+  assetPath: Assets/Plugins/StellaRabbitStudio/TMP VFX/Scripts/Editor/TMPVFXDrawer.cs
+  uploadId: 724125
