@@ -11,7 +11,7 @@ public class SmoothPortalMover : MonoBehaviour
     [Header("이동 시간 (초)")]
     public float moveDuration = 1.0f; // 포탈을 통과하는 동안 걸리는 시간
 
-    [Header("포탈 충돌 감지용 콜라이더")]
+    [Header("포탈 충돌 감지용 콜라이더 consumer 넣자")]
     public BoxCollider portalCollider;  // 인스펙터에서 포탈 충돌용 박스콜라이더를 지정
 
     private bool isMoving = false;

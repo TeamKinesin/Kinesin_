@@ -820,7 +820,7 @@ MonoBehaviour:
     m_Value: 0.25
   bloomThreshold:
     m_OverrideState: 1
-    m_Value: 0.7
+    m_Value: 0.76
   bloomConservativeThreshold:
     m_OverrideState: 1
     m_Value: 0
