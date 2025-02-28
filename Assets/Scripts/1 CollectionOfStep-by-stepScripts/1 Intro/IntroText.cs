@@ -14,6 +14,8 @@ public class IntroText : MonoBehaviour
      [Header("인트로 진행후 코드")] 
     [SerializeField] GameObject introOff;
     [SerializeField] GameObject TutorialOn; 
+    [SerializeField] GameObject OffFollowText;
+    [SerializeField] DialogueSystem OffFollowDialogueText;
 
     void Start()
     {
@@ -63,7 +65,8 @@ public class IntroText : MonoBehaviour
         gameObject.SetActive(false);
         introOff.SetActive(false);
         TutorialOn.SetActive(true);
-        
+        OffFollowDialogueText.enabled = false;
+        OffFollowText.SetActive(false);
     }
 
     // 텍스트의 알파값을 설정하는 헬퍼 함수

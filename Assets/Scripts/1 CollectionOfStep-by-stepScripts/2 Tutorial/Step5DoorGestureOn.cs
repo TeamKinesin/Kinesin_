@@ -16,6 +16,9 @@ public class Step5DoorGestureOn : MonoBehaviour
 
     [SerializeField] GameObject playerCollider;
 
+    [SerializeField] GameObject followCamera;
+    [SerializeField] DialogueSystem dialogueScript1;
+
     [Header("문 생성 딜레이 (초)")]
     public float doorAppearDelay = 2f;  // 인스펙터에서 설정 가능
 
@@ -30,11 +33,21 @@ public class Step5DoorGestureOn : MonoBehaviour
     {
         if (dialogueSystem.dialogueFinished)
         {
+            followCamera.SetActive(true);
             gestureOn.SetActive(true);
+            dialogueScript1.enabled = true;
             if (movementRecognizer.result.GestureClass == "D" && !hasTrigger)
             {
-                playerCollider.SetActive(false);    
+                //collider 없애기
+                playerCollider.SetActive(false);
+                //VFX 키기    
                 memoVFX.SetActive(true);
+                //Gesture 끄기
+                gestureOn.SetActive(false);
+                //해당 오브젝의 다이얼로그 스크립트 끄기
+                dialogueScript1.enabled = false;
+                //팔로우 카메라 끄기;
+                followCamera.SetActive(false);
                 hasTrigger = true; // 중복 트리거 방지
                 StartCoroutine(ShowDoorAfterDelay());
             }
