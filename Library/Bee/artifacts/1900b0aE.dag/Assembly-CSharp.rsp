@@ -513,6 +513,7 @@
 "Assets/Scripts/TextDialogue/DialogueSystem.cs"
 "Assets/Scripts/TextDialogue/FollowDialogue.cs"
 "Assets/Scripts/UnityAction/Deligate.cs"
+"Assets/Scripts/XRHandInteraction/HandPresencePhysics.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 

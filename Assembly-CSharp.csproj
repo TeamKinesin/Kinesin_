@@ -98,6 +98,7 @@
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\Mesh3DPenLineHolder.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFx\SonarOneShotController.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\Gesture.cs" />
+    <Compile Include="Assets\Scripts\XRHandInteraction\HandPresencePhysics.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFx\SonarFxSwitcher.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\Mesh3DPenPalette.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\PointCloudRecognizer.cs" />
