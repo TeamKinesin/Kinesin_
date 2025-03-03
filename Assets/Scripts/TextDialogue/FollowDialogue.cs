@@ -5,7 +5,7 @@ using UnityEngine;
 public class FollowDialogue : MonoBehaviour
 {
     [SerializeField] private Transform cameraTransform;
-    [SerializeField] private float distance = 3.0f;
+    [SerializeField] private float distance = 12.0f;
 
     private void Update()
     {

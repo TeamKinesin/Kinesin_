@@ -48,6 +48,8 @@ public class Step5DoorGestureOn : MonoBehaviour
                 dialogueScript1.enabled = false;
                 //팔로우 카메라 끄기;
                 followCamera.SetActive(false);
+                dialogueScript1.NextDialogue();
+                //
                 hasTrigger = true; // 중복 트리거 방지
                 StartCoroutine(ShowDoorAfterDelay());
             }

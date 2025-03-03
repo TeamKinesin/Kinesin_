@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bd486065ce11414fa40e631affc4900, type: 3}
   m_Name: ProbeVolumesOptions
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   normalBias:
     m_OverrideState: 1
     m_Value: 0.79
@@ -266,7 +266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2db86121404754db890f4c8dfe81b2, type: 3}
   m_Name: Bloom
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   skipIterations:
     m_OverrideState: 1
     m_Value: 1
@@ -313,10 +313,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06437c1ff663d574d9447842ba0a72e4, type: 3}
   m_Name: ScreenSpaceLensFlare
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   tintColor:
     m_OverrideState: 1
     m_Value: {r: 1, g: 1, b: 1, a: 1}
@@ -690,7 +690,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   comparePanning:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.25
   compareLineAngle:
     m_OverrideState: 1
@@ -705,11 +705,11 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   debugOutput:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   turboMode:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0
   directWrite:
     m_OverrideState: 1
     m_Value: 0
@@ -729,42 +729,42 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   sharpenIntensity:
-    m_OverrideState: 1
-    m_Value: 13.3
+    m_OverrideState: 0
+    m_Value: 10.2
   sharpenDepthThreshold:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.035
   sharpenMinMaxDepth:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {x: 0.10100007, y: 1.1}
     min: 0
     max: 1.1
   sharpenMinMaxDepthFallOff:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   sharpenRelaxation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.042
   sharpenClamp:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.45
   sharpenMotionSensibility:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.5
   sharpenMotionRestoreSpeed:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.5
   antialiasStrength:
     m_OverrideState: 0
-    m_Value: 14.1
+    m_Value: 8.94
   antialiasDepthThreshold:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   antialiasSpread:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 4.25
   antialiasDepthAttenuation:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
   tonemap:
     m_OverrideState: 1
@@ -798,7 +798,7 @@ MonoBehaviour:
     m_Value: 0.082
   tintColor:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 0}
+    m_Value: {r: 0.8509804, g: 0.7698387, b: 0.59607846, a: 0}
   colorTempBlend:
     m_OverrideState: 0
     m_Value: 0
@@ -965,7 +965,7 @@ MonoBehaviour:
     m_Value: 0
   sunFlaresIntensity:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 0.831
   sunFlaresTint:
     m_OverrideState: 1
     m_Value: {r: 1, g: 0.9266457, b: 0.5707547, a: 1}
@@ -996,11 +996,11 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 30
   sunFlaresSunIntensity:
-    m_OverrideState: 1
-    m_Value: 0.032
+    m_OverrideState: 0
+    m_Value: 0.943
   sunFlaresSunDiskSize:
     m_OverrideState: 1
-    m_Value: 0.092
+    m_Value: 0.6
   sunFlaresSunRayDiffractionIntensity:
     m_OverrideState: 1
     m_Value: 1.9
@@ -1103,7 +1103,7 @@ MonoBehaviour:
     m_Value: 0
   depthOfField:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 0
   depthOfFieldFocusMode:
     m_OverrideState: 1
     m_Value: 0
@@ -1201,7 +1201,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 2
   depthOfFieldDownsampling:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 2
   depthOfFieldMaxSamples:
     m_OverrideState: 1
@@ -1222,8 +1222,8 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   eyeAdaptation:
-    m_OverrideState: 1
-    m_Value: 1
+    m_OverrideState: 0
+    m_Value: 0
   eyeAdaptationMinExposure:
     m_OverrideState: 1
     m_Value: 0.2
@@ -1364,7 +1364,7 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 9
   ditherIntensity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0.005
   frame:
     m_OverrideState: 0

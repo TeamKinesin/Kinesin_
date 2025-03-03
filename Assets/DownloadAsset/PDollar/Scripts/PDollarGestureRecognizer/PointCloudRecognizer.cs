@@ -78,21 +78,41 @@ namespace PDollarGestureRecognizer
         /// <param name="trainingSet"></param>
         /// <returns></returns>
         public static Result Classify(Gesture candidate, Gesture[] trainingSet)
-        {
-            float minDistance = float.MaxValue;
-            string gestureClass = "";
-            foreach (Gesture template in trainingSet)
-            {
-                float dist = GreedyCloudMatch(candidate.Points, template.Points);
-                if (dist < minDistance)
-                {
-                    minDistance = dist;
-                    gestureClass = template.Name;
-                }
-            }
+{
+    try
+    {
+        float minDistance = float.MaxValue;
+        string gestureClass = "";
 
-			return gestureClass == "" ? new Result() {GestureClass = "No match", Score = 0.0f} : new Result() {GestureClass = gestureClass, Score = Mathf.Max((minDistance - 2.0f) / -2.0f, 0.0f)};
+        foreach (Gesture template in trainingSet)
+        {
+            float dist = GreedyCloudMatch(candidate.Points, template.Points);
+            if (dist < minDistance)
+            {
+                minDistance = dist;
+                gestureClass = template.Name;
+            }
         }
+
+        // If no gesture was matched, return a "No match" result; otherwise, compute Score
+        return gestureClass == ""
+            ? new Result() { GestureClass = "No match", Score = 0.0f }
+            : new Result()
+              {
+                  GestureClass = gestureClass,
+                  Score = Mathf.Max((minDistance - 2.0f) / -2.0f, 0.0f)
+              };
+    }
+    catch (IndexOutOfRangeException)
+    {
+        // Return a valid Result object here, too
+        return new Result() 
+        {
+            GestureClass = "Index out of range",
+            Score = 0.0f
+        };
+    }
+}
 
         /// <summary>
         /// Implements greedy search for a minimum-distance matching between two point clouds

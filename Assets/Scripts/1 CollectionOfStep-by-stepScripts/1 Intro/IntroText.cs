@@ -59,6 +59,9 @@ public class IntroText : MonoBehaviour
 
         //-> 진행코드를 여기다 적을게요.
          // 대기 시간 추가 (예: 2초)
+        OffFollowDialogueText.enabled = false;
+        OffFollowText.SetActive(false);
+         
         yield return new WaitForSeconds(2f);
 
         // 진행 코드

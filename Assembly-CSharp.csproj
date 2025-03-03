@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Assets\DownloadAsset\VolumetricLights\Demos\Minimal\Scripts\CubeGen.cs" />
     <Compile Include="Assets\Scripts\EatFoodAction\Consumer.cs" />
+    <Compile Include="Assets\DownloadAsset\WaterWorks\Scripts\Water_Settings.cs" />
     <Compile Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Scripts\LUTBlending.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\PortalPair.cs" />
     <Compile Include="Assets\DownloadAsset\VolumetricLights\Demos\Minimal\Scripts\ObjectRotate.cs" />
@@ -122,6 +123,7 @@
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\Mesh3DPenEraser.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\2 Tutorial\Step5DoorGestureOn.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\Geometry.cs" />
+    <Compile Include="Assets\DownloadAsset\WaterWorks\Scripts\Water_Volume.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\MeshPenPixelEraser.cs" />
     <Compile Include="Assets\DownloadAsset\Kino\Glitch\Postprocess\AnalogGlitchPostprocess.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\2 Tutorial\Step4TextStart2.cs" />
@@ -147,7 +149,6 @@
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\TransparentMultiply.shader" />
     <None Include="Assets\GestureData\A.xml" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-six_point_star-01.xml" />
-    <None Include="Assets\GestureData\O.xml" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\DepthOnly.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-asterisk-01.xml" />
@@ -174,11 +175,13 @@
     <None Include="Assets\Scripts\3DPenDrawing\Shaders\EraseableMeshPenLine.shader" />
     <None Include="Assets\INab Studio\Demo Assets\Unity Companion License\Third-Party Notice.txt" />
     <None Include="Assets\Scripts\PotalCamera\PotalScript\Shaders\PortalMask.shader" />
+    <None Include="Assets\DownloadAsset\WaterWorks\Shaders\Volumetric_Water.shader" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\DepthOnly_Include.hlsl" />
     <None Include="Assets\Scripts\3DPenDrawing\Shaders\Paintbrush.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\GestureData\D.xml" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-line-01.xml" />
+    <None Include="Assets\DownloadAsset\WaterWorks\Shaders\WaterSSR.hlsl" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Blur.hlsl" />
     <None Include="Assets\INab Studio\Demo Assets\Unity Companion License\3D Game Kit - Props Pack\Link.txt" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Lighting.hlsl" />
@@ -218,8 +221,10 @@
     <None Include="Assets\DownloadAsset\Beautify\URP\README.txt" />
     <None Include="Assets\Shaders\Include\Brush.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\DownloadAsset\WaterWorks\DOCUMENTATION.txt" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Particles\DustParticles.shader" />
     <None Include="Assets\DownloadAsset\VolumetricLightsBundle\_README FIRST!.txt" />
+    <None Include="Assets\DownloadAsset\WaterWorks\Shaders\Water_Volume.hlsl" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-P-01.xml" />
     <None Include="Assets\Scripts\SonarFx\SonarFx\Shader\SonarFx.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />

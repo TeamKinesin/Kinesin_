@@ -88,7 +88,7 @@ public class DialogueSystem : MonoBehaviour
     /// <summary>
     /// 다음 대사를 실행 (기존 실행 중인 코루틴 있으면 중단)
     /// </summary>
-    private void NextDialogue()
+    public void NextDialogue()
     {
         // 이전에 진행중이던 코루틴이 있다면 중단
         if (currentDialogueCoroutine != null)

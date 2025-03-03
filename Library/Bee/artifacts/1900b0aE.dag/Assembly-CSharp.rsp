@@ -467,6 +467,8 @@
 "Assets/DownloadAsset/VolumetricLights/Demos/Minimal/Scripts/FenceGen.cs"
 "Assets/DownloadAsset/VolumetricLights/Demos/Minimal/Scripts/ObjectRotate.cs"
 "Assets/DownloadAsset/VolumetricLights/Demos/Temple/Scripts/PlayerController.cs"
+"Assets/DownloadAsset/WaterWorks/Scripts/Water_Settings.cs"
+"Assets/DownloadAsset/WaterWorks/Scripts/Water_Volume.cs"
 "Assets/DownloadAsset/_Samples/Scripts/VolumeController.cs"
 "Assets/INab Studio/Demo Assets/INab Studio/Helper Scripts/CameraManager.cs"
 "Assets/INab Studio/Demo Assets/INab Studio/Helper Scripts/TestSceneManager.cs"
