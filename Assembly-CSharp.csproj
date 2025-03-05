@@ -68,6 +68,7 @@
     <Compile Include="Assets\DownloadAsset\VolumetricLights\Demos\Minimal\Scripts\CubeGen.cs" />
     <Compile Include="Assets\Scripts\EatFoodAction\Consumer.cs" />
     <Compile Include="Assets\DownloadAsset\WaterWorks\Scripts\Water_Settings.cs" />
+    <Compile Include="Assets\FlatKit\Demos\[Demo] Desert\Scripts\FloatingMotion.cs" />
     <Compile Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Scripts\LUTBlending.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\PortalPair.cs" />
     <Compile Include="Assets\DownloadAsset\VolumetricLights\Demos\Minimal\Scripts\ObjectRotate.cs" />
@@ -79,10 +80,12 @@
     <Compile Include="Assets\DownloadAsset\_Samples\Scripts\VolumeController.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\Mesh3DPenPaletteColor.cs" />
     <Compile Include="Assets\INab Studio\Demo Assets\INab Studio\Helper Scripts\TestSceneManager.cs" />
+    <Compile Include="Assets\FlatKit\Demos\Common\Scripts\Motion\OrbitMotion.cs" />
     <Compile Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Scripts\ToggleDoF.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFx\SonarFx.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\2 Tutorial\Step1SonarEvent.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\Result.cs" />
+    <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\3 Main\XRGrabInteractableWithPalette.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\2 Tutorial\Step2FadeOutWhite.cs" />
     <Compile Include="Assets\DownloadAsset\VolumetricLights\Demos\Temple\Scripts\PlayerController.cs" />
     <Compile Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Scripts\CameraAnimator.cs" />
@@ -99,24 +102,31 @@
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\Mesh3DPenLineHolder.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFx\SonarOneShotController.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\Gesture.cs" />
+    <Compile Include="Assets\FlatKit\[Render Pipeline] URP\Water\Scripts\Buoyancy.cs" />
     <Compile Include="Assets\Scripts\XRHandInteraction\HandPresencePhysics.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFx\SonarFxSwitcher.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\Mesh3DPenPalette.cs" />
+    <Compile Include="Assets\FlatKit\Demos\Common\Scripts\UvScroller.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\PointCloudRecognizer.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\2 Tutorial\PollowPhysics.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\Demo.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\Portal.cs" />
     <Compile Include="Assets\DownloadAsset\Kino\Glitch\AnalogGlitch.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\FlatKit\Demos\[Demo] Desert\Scripts\BillboardLineRendererCircle.cs" />
     <Compile Include="Assets\DownloadAsset\Kino\Glitch\DigitalGlitch.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFx\SonarFxFeature.cs" />
+    <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\3 Main\CloseDialogue.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\SonarFx\Reaktion\Utility\ConstantMotion.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\Crosshair.cs" />
+    <Compile Include="Assets\FlatKit\Demos\Common\Scripts\AutoLoadPipelineAsset.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\PaletteColor.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\PortalCamera.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFxTest.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\ChangeColor.cs" />
+    <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\3 Main\TriggerEventArray.cs" />
+    <Compile Include="Assets\FlatKit\Demos\Common\Scripts\Motion\LinearMotion.cs" />
     <Compile Include="Assets\INab Studio\Demo Assets\INab Studio\Helper Scripts\CameraManager.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFx\SonarFxRenderPass.cs" />
     <Compile Include="Assets\DownloadAsset\VolumetricLights\Demos\Minimal\Scripts\FenceGen.cs" />
@@ -127,6 +137,7 @@
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\MeshPenPixelEraser.cs" />
     <Compile Include="Assets\DownloadAsset\Kino\Glitch\Postprocess\AnalogGlitchPostprocess.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\2 Tutorial\Step4TextStart2.cs" />
+    <Compile Include="Assets\Material\8K Skybox Pack Free\Example Scenes\Script\RotateCamera.cs" />
     <Compile Include="Assets\Scripts\GestureDetect\MovementRecognizer.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\Mesh3DPen.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\1 Intro\IntroText.cs" />
@@ -144,6 +155,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-exclamation_point-01.xml" />
+    <None Include="Assets\FlatKit\Shaders\StylizedSurface\LibraryUrp\LitForwardPass_DR.hlsl" />
     <None Include="Assets\Scripts\3DPenDrawing\Shaders\Unlit Double Sided.shader" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Particles\DustParticlesForwardPass.hlsl" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\TransparentMultiply.shader" />
@@ -151,19 +163,26 @@
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-six_point_star-01.xml" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\DepthOnly.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\FlatKit\Shaders\StylizedSurface\LibraryUrp\TerrainLitPasses_DR.hlsl" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-asterisk-01.xml" />
+    <None Include="Assets\FlatKit\Demos\[Demo] Desert\Shaders\CircleDecal.shader" />
     <None Include="Assets\Shaders\Include\PackInt.cginc" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-I-01.xml" />
     <None Include="Assets\Scripts\3DPenDrawing\Shaders\StandardDoubleSided.shader" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-X-01.xml" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Primitives.hlsl" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\TransparentDepthWrite.shader" />
+    <None Include="Assets\Material\8K Skybox Pack Free\ReadMe.txt" />
     <None Include="Assets\Scripts\SonarFx\TestFolder\ScanSphereInner.shader" />
+    <None Include="Assets\FlatKit\Demos\[Demo] Desert\Shaders\Noise\ClassicNoise3D.hlsl" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Empty.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\FlatKit\Shaders\StylizedSurface\LibraryUrp\StylizedInput.hlsl" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\VolumetricLightURP.shader" />
+    <None Include="Assets\FlatKit\Shaders\GradientSkybox\GradientSkybox.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\Scripts\SonarFx\TestFolder\ScanSphereRing.shader" />
+    <None Include="Assets\FlatKit\Demos\[Demo] Desert\Shaders\Noise\Common.hlsl" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Particles\DustParticlesInput.hlsl" />
     <None Include="Assets\DownloadAsset\Beautify\_README FIRST!.txt" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-H-01.xml" />
@@ -187,10 +206,13 @@
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Lighting.hlsl" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-T-01.xml" />
     <None Include="Assets\TextMesh Pro\Shaders\SDFFunctions.hlsl" />
+    <None Include="Assets\FlatKit\Shaders\StylizedSurface\LibraryUrp\Lighting_DR.hlsl" />
     <None Include="Assets\Scripts\PotalCamera\PotalScript\Shaders\Outline.shader" />
     <None Include="Assets\INab Studio\Demo Assets\Unity Companion License\Robot Kyle\Link.txt" />
     <None Include="Assets\DownloadAsset\URPGlitch\LICENSES\LICENSE.txt" />
+    <None Include="Assets\FlatKit\Demos\[Demo] Desert\Shaders\DesertCloud.hlsl" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\CopyDepthIntoCubemap.shader" />
+    <None Include="Assets\FlatKit\Shaders\StylizedSurface\StylizedSurfaceOutline.shader" />
     <None Include="Assets\DownloadAsset\VolumetricLights\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\ShadowOcclusion.hlsl" />
@@ -200,6 +222,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Shaders\Include\Ods.cginc" />
+    <None Include="Assets\FlatKit\Demos\[Demo] Desert\Shaders\DesertPillar.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Options.hlsl" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
@@ -209,11 +232,13 @@
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Invisible.shader" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-five_point_star-01.xml" />
     <None Include="Assets\DownloadAsset\Kino\Glitch\Shader\DigitalGlitch.shader" />
+    <None Include="Assets\Material\SkyBox\ProceduralCloud.shader" />
     <None Include="Assets\DownloadAsset\Kino\Glitch\Shader\AnalogGlitch.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-N-01.xml" />
     <None Include="Assets\DownloadAsset\URPGlitch\Shaders\DigitalGlitch.shader" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Blur.shader" />
+    <None Include="Assets\FlatKit\Demos\[Demo] Desert\Shaders\Library\StylizedLighting.hlsl" />
     <None Include="Assets\GestureData\T.xml" />
     <None Include="Assets\Shaders\Include\ColorSpace.cginc" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-D-01.xml" />
@@ -222,9 +247,11 @@
     <None Include="Assets\Shaders\Include\Brush.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\DownloadAsset\WaterWorks\DOCUMENTATION.txt" />
+    <None Include="Assets\FlatKit\Demos\[Demo] Desert\Shaders\Noise\ClassicNoise2D.hlsl" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Particles\DustParticles.shader" />
     <None Include="Assets\DownloadAsset\VolumetricLightsBundle\_README FIRST!.txt" />
     <None Include="Assets\DownloadAsset\WaterWorks\Shaders\Water_Volume.hlsl" />
+    <None Include="Assets\FlatKit\Shaders\StylizedSurface\TerrainLitAdd_DR.shader" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-P-01.xml" />
     <None Include="Assets\Scripts\SonarFx\SonarFx\Shader\SonarFx.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -234,13 +261,17 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\INab Studio\Demo Assets\Unity Companion License\3D Game Kit - Character Pack\Link.txt" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-null-01.xml" />
+    <None Include="Assets\FlatKit\Shaders\StylizedSurface\StylizedSurface.shader" />
     <None Include="Assets\Shaders\Include\Math.cginc" />
+    <None Include="Assets\FlatKit\Shaders\LightPlane.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\FlatKit\Shaders\StylizedSurface\Terrain.shader" />
     <None Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Skybox\README_SKYBOX.txt" />
     <None Include="Assets\Shaders\Include\MobileSelection.cginc" />
     <None Include="Assets\DownloadAsset\VolumetricLights\Resources\Shaders\Raymarch.hlsl" />
     <None Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Shaders\TextureLerp.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\FlatKit\[Render Pipeline] URP\Water\Shaders\Water.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1359,12 +1390,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.AI.Navigation.Updater">
       <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
@@ -1490,10 +1521,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj" />
+    <ProjectReference Include="FlatKit.Utils.Editor.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.csproj" />
     <ProjectReference Include="VFXGraph.OutputEventHandlers.Editor.csproj" />
     <ProjectReference Include="VFXGraph.OutputEventHandlers.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.StarterAssets.Editor.csproj" />
+    <ProjectReference Include="ExternAttributes.Editor.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj" />
     <ProjectReference Include="Unity.XR.Interaction.Toolkit.Samples.DeviceSimulator.csproj" />
   </ItemGroup>
