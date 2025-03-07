@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\UnityAction\Deligate.cs" />
     <Compile Include="Assets\Scripts\ShareMaterial\ShareMaterial.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\Point.cs" />
+    <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\3 Main\Step1MainEvent.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\PortalPlacement.cs" />
     <Compile Include="Assets\DownloadAsset\Beautify\URP\Demo\DemoSources\Scripts\Demo.cs" />
     <Compile Include="Assets\DownloadAsset\_Samples\Scripts\VolumeController.cs" />

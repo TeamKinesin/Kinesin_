@@ -30,14 +30,16 @@ public class Mesh3DPen : MonoBehaviour
     [SerializeField] 
     private MonoBehaviour xrGrabInteractable; 
     // ↑ 실제로는 XRGrabInteractable 참조하면 됩니다.
-
+    
+    [Header("Boolean Draw")]
+    [SerializeField]
+    public bool drawing = true;
     #endregion
 
     #region Unity Methods
 
     private void Start()
     {
-        // 싱글플레이이므로, 네트워크 Ownership 등은 제거
         UpdateLineOwnership();
     }
 
@@ -91,9 +93,11 @@ public class Mesh3DPen : MonoBehaviour
     /// </summary>
     public void OnPenUseDown()
     {
+        if (!drawing) { 
+            line.StopDrawing();
+        }
         // 원본 OnPickupUseDown() 이벤트 대체
-        if (line != null)
-        {
+        else if (drawing){
             line.StartDrawing();
         }
     }
