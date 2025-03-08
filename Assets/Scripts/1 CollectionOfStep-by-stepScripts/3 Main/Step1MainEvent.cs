@@ -19,7 +19,6 @@ public class Step1MainEvent : MonoBehaviour
 
     [Header("게임오브젝트")]
     [SerializeField] private GameObject brush;
-    [SerializeField] private GameObject erase;
 
     [Header("드로잉 오브젝트 Script")]
     [SerializeField] private Mesh3DPen mesh3DPen;
@@ -35,7 +34,6 @@ public class Step1MainEvent : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         
         brush.transform.position = newTransform.position;
-        erase.transform.position = newTransform.position;
     }
 
     private IEnumerator SecondEvent(float waitTime){

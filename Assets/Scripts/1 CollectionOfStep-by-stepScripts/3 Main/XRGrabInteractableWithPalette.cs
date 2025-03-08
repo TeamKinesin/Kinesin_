@@ -1,44 +1,49 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
 
-/// <summary>
-/// "잡히는" Interactable 오브젝트에 붙여,
-/// 잡고 있는 동안만 왼/오른손 버튼 상태를 폴링하여 팔레트를 보여주거나 숨기는 예시.
-/// </summary>
 public class XRGrabInteractableWithPalette : XRGrabInteractable
 {
     [Header("XR Node Settings")]
-    [SerializeField] private XRNode inputSource1;           // 왼손(예: LeftHand)
+    [SerializeField] private XRNode inputSource1;           
     [SerializeField] private InputHelpers.Button inputButton1;
-    [SerializeField] private XRNode inputSource2;           // 오른손(예: RightHand)
+    [SerializeField] private XRNode inputSource2;           
     [SerializeField] private InputHelpers.Button inputButton2;
+    [SerializeField] private XRNode inputSource3;           
+    [SerializeField] private InputHelpers.Button inputButton3;
+    [SerializeField] private XRNode inputSource4;           
+    [SerializeField] private InputHelpers.Button inputButton4;
     [SerializeField] private float inputThreshold = 0.1f;
 
     [Header("Palette Objects [반대로 넣어주세요.]")]
     [SerializeField] private GameObject leftPalette;
     [SerializeField] private GameObject rightPalette;
 
+    [Header("Toggle Object")]
+    [SerializeField] private GameObject togglePenObject;
+    [SerializeField] private GameObject toggleEraserObject; 
+
+    [Header("Draw || Erase")]
+    [SerializeField] private Mesh3DPen mesh3DPen;
+    [SerializeField] private MeshPenPixelEraser meshPenPixelEraser; 
+
     // 이 오브젝트가 현재 "잡혀" 있는지 여부
     private bool isGrabbed = false;
 
-    /// <summary>
-    /// 잡혔을 때(Select Entered) 호출되는 콜백
-    /// </summary>
+    // 왼손/오른손 1번 버튼의 ‘이전 프레임’ 상태
+    private bool wasPressed3 = false; // 왼손 1번 버튼
+    private bool wasPressed4 = false; // 오른손 1번 버튼
+
     protected override void OnSelectEntered(SelectEnterEventArgs args)
     {
         base.OnSelectEntered(args);
-        // 이 오브젝트가 잡힘
         isGrabbed = true;
     }
 
-    /// <summary>
-    /// 놓았을 때(Select Exited) 호출되는 콜백
-    /// </summary>
     protected override void OnSelectExited(SelectExitEventArgs args)
     {
         base.OnSelectExited(args);
-        // 오브젝트가 놓임
         isGrabbed = false;
 
         // 놓는 순간 팔레트를 모두 꺼준다
@@ -55,11 +60,13 @@ public class XRGrabInteractableWithPalette : XRGrabInteractable
         if (!isGrabbed)
             return;
 
-        // 왼손/오른손 버튼 상태를 폴링
+        // 버튼 상태를 폴링
         bool isPressed1 = false;
         bool isPressed2 = false;
+        bool isPressed3 = false; // 왼손 1번 버튼(토글용)
+        bool isPressed4 = false; // 오른손 1번 버튼(토글용)
 
-        // 왼손
+        // 왼손 (Palette On/Off)
         InputHelpers.IsPressed(
             InputDevices.GetDeviceAtXRNode(inputSource1),
             inputButton1,
@@ -67,7 +74,7 @@ public class XRGrabInteractableWithPalette : XRGrabInteractable
             inputThreshold
         );
 
-        // 오른손
+        // 오른손 (Palette On/Off)
         InputHelpers.IsPressed(
             InputDevices.GetDeviceAtXRNode(inputSource2),
             inputButton2,
@@ -75,12 +82,44 @@ public class XRGrabInteractableWithPalette : XRGrabInteractable
             inputThreshold
         );
 
-        // 왼손 버튼 누르는 동안 leftPalette On, 아니면 Off
+        // 왼손 1번 버튼 (Toggle용)
+        InputHelpers.IsPressed(
+            InputDevices.GetDeviceAtXRNode(inputSource3),
+            inputButton3,
+            out isPressed3,
+            inputThreshold
+        );
+
+        // 오른손 1번 버튼 (Toggle용)
+        InputHelpers.IsPressed(
+            InputDevices.GetDeviceAtXRNode(inputSource4),
+            inputButton4,
+            out isPressed4,
+            inputThreshold
+        );
+
+        // 왼손/오른손 버튼을 누르는 동안 팔레트 On/Off
         if (leftPalette != null)
             leftPalette.SetActive(isPressed1);
 
-        // 오른손 버튼 누르는 동안 rightPalette On, 아니면 Off
         if (rightPalette != null)
             rightPalette.SetActive(isPressed2);
+
+        // 왼손 1번 버튼 "이번 프레임에 새로 눌린" 상태
+        bool justPressedLeft = (isPressed3 && !wasPressed3);
+        // 오른손 1번 버튼 "이번 프레임에 새로 눌린" 상태
+        bool justPressedRight = (isPressed4 && !wasPressed4);
+
+        // 왼손 1번 혹은 오른손 1번 버튼 "둘 중 하나라도" 새롭게 눌렸으면 toggle
+        if ((justPressedLeft || justPressedRight)){
+            togglePenObject.SetActive(!togglePenObject.activeSelf);
+            toggleEraserObject.SetActive(!toggleEraserObject.activeSelf);
+            mesh3DPen.drawing = !mesh3DPen.drawing;
+            meshPenPixelEraser.eraserOn = !meshPenPixelEraser.eraserOn;
+        }
+
+        // 현재 프레임의 버튼 상태 저장(다음 프레임 비교용)
+        wasPressed3 = isPressed3;
+        wasPressed4 = isPressed4;
     }
 }
