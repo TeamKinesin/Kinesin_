@@ -9,13 +9,13 @@ C:\Program Files\Unity 2023.2.20f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker1
 -projectPath
 C:/Users/Master/Documents/GitHub/Kinesin_
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker1.log
 -srvPort
-62247
+51667
 -job-worker-count
 5
 -background-job-worker-count
@@ -58,13 +58,13 @@ C:/Users/Master/Documents/GitHub/Kinesin_
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [9844] Host "[IP] 192.168.0.199 [Port] 0 [Flags] 2 [Guid] 3936379590 [EditorId] 3936379590 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-77GD5S9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [9844] Host "[IP] 192.168.0.199 [Port] 0 [Flags] 2 [Guid] 3936379590 [EditorId] 3936379590 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-77GD5S9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4304] Host "[IP] 192.168.0.199 [Port] 0 [Flags] 2 [Guid] 373137472 [EditorId] 373137472 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-77GD5S9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [4304] Host "[IP] 192.168.0.199 [Port] 0 [Flags] 2 [Guid] 373137472 [EditorId] 373137472 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-77GD5S9) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 [Physics::Module] Initialized MultithreadedJobDispatcher with 5 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 12.43 ms, found 13 plugins.
-Preloading 1 native plugins for Editor in 1.00 ms.
+Refreshing native plugins compatible for Editor in 12.72 ms, found 13 plugins.
+Preloading 1 native plugins for Editor in 0.74 ms.
 Initialize engine version: 2023.2.20f1 (0e25a174756c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2023.2.20f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/Master/Documents/GitHub/Kinesin_/Assets
@@ -81,45 +81,45 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2023.2.20f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2023.2.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2023.2.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56660
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2023.2.20f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity 2023.2.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.004170 seconds.
-- Loaded All Assemblies, in  0.354 seconds
+Registered in 0.003344 seconds.
+- Loaded All Assemblies, in  0.343 seconds
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.318 seconds
-Domain Reload Profiling: 671ms
-	BeginReloadAssembly (118ms)
+- Finished resetting the current domain, in  0.348 seconds
+Domain Reload Profiling: 688ms
+	BeginReloadAssembly (107ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (143ms)
-		LoadAssemblies (116ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (142ms)
+		LoadAssemblies (105ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (141ms)
-			TypeCache.Refresh (139ms)
-				TypeCache.ScanAssembly (126ms)
+		AnalyzeDomain (139ms)
+			TypeCache.Refresh (138ms)
+				TypeCache.ScanAssembly (127ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (319ms)
+	FinalizeReload (348ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (259ms)
+		SetupLoadedEditorAssemblies (292ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (67ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (5ms)
-			ProcessInitializeOnLoadAttributes (138ms)
-			ProcessInitializeOnLoadMethodAttributes (46ms)
+			InitializePlatformSupportModulesInManaged (78ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (153ms)
+			ProcessInitializeOnLoadMethodAttributes (53ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -129,17 +129,17 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.936 seconds
+- Loaded All Assemblies, in  0.935 seconds
 'Packages/com.unity.xr.openxr/Runtime/OpenXRLoader.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
 'Packages/com.unity.xr.openxr/Runtime/OpenXRLoaderInternal.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
-Refreshing native plugins compatible for Editor in 9.34 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 8.73 ms, found 13 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-Refreshing native plugins compatible for Editor in 9.92 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 10.16 ms, found 13 plugins.
 Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
@@ -147,46 +147,90 @@ Mono: successfully reloaded assembly
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.943 seconds
-Domain Reload Profiling: 1873ms
-	BeginReloadAssembly (320ms)
+- Finished resetting the current domain, in  0.938 seconds
+Domain Reload Profiling: 1867ms
+	BeginReloadAssembly (329ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (15ms)
 	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (525ms)
-		LoadAssemblies (363ms)
+	LoadAllAssembliesAndSetupDomain (517ms)
+		LoadAssemblies (357ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (254ms)
-			TypeCache.Refresh (199ms)
-				TypeCache.ScanAssembly (180ms)
-			BuildScriptInfoCaches (40ms)
+			TypeCache.Refresh (202ms)
+				TypeCache.ScanAssembly (182ms)
+			BuildScriptInfoCaches (37ms)
 			ResolveRequiredComponents (12ms)
-	FinalizeReload (943ms)
+	FinalizeReload (939ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (685ms)
+		SetupLoadedEditorAssemblies (684ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
+			InitializePlatformSupportModulesInManaged (16ms)
 			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (455ms)
-			ProcessInitializeOnLoadMethodAttributes (120ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (452ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 Shader 'Custom/ScanSphereLit': fallback shader 'Universal Forward' not found
 Shader 'Brush/StandardDoubleSided_URP': fallback shader 'Universal Forward' not found
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 8.39 ms, found 13 plugins.
+Refreshing native plugins compatible for Editor in 9.34 ms, found 13 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
 Unloading 274 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7510 unused Assets / (6.8 MB). Loaded Objects now: 8317.
-Memory consumption went from 220.9 MB to 214.1 MB.
-Total: 10.443100 ms (FindLiveObjects: 0.769600 ms CreateObjectMapping: 0.346800 ms MarkObjects: 6.513000 ms  DeleteObjects: 2.813100 ms)
+Unloading 7510 unused Assets / (7.0 MB). Loaded Objects now: 8317.
+Memory consumption went from 220.8 MB to 213.8 MB.
+Total: 11.542100 ms (FindLiveObjects: 0.846300 ms CreateObjectMapping: 0.446000 ms MarkObjects: 6.288000 ms  DeleteObjects: 3.960900 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 7091.549041 seconds.
+  path: Assets/Modeling/Canvas
+  artifactKey: Guid(6f323d0ceb8a0bc4ebbcf43470cde7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeling/Canvas using Guid(6f323d0ceb8a0bc4ebbcf43470cde7f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bee2f835192f2e031560a66a108c0af5') in 0.0048151 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Modeling/Canvas/Canvas_C.png
+  artifactKey: Guid(1da4f8e8b6898a047b5fb676d005f819) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeling/Canvas/Canvas_C.png using Guid(1da4f8e8b6898a047b5fb676d005f819) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de71a83bd9859e0877c7a80619bc6158') in 0.0515657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Modeling/Canvas/Canvas_NGD.png
+  artifactKey: Guid(f0a9427fb0ab5b943b40094255df8acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeling/Canvas/Canvas_NGD.png using Guid(f0a9427fb0ab5b943b40094255df8acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cf3441beb12465adbb5ec1cd91847063') in 0.0081214 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Modeling/Canvas/Canvas_GN.png
+  artifactKey: Guid(693de5d802b86c14689f4f8581f40d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeling/Canvas/Canvas_GN.png using Guid(693de5d802b86c14689f4f8581f40d88) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0ba8b31ee1217207af457c8b3795c522') in 0.0053633 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Modeling/Canvas/Canvas_NGN.png
+  artifactKey: Guid(77cb6d66558cbb148b38a472a7755265) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Modeling/Canvas/Canvas_NGN.png using Guid(77cb6d66558cbb148b38a472a7755265) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '108f040c940521fb936d8e2363a3a45f') in 0.0065114 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
