@@ -72,12 +72,12 @@ Material:
     m_Floats:
     - _AtmosphereThickness: 1.04
     - _BumpScale: 1
-    - _CloudCull: 0.835
-    - _CloudDensity: 0.283
+    - _CloudCull: 0.852
+    - _CloudDensity: 0.583
     - _CloudDither: 0
     - _CloudLit: 0.05
     - _CloudNumber: 0.223
-    - _CloudSpeed: 1
+    - _CloudSpeed: 7
     - _CloudStep: 6541.12
     - _CloudStep2: 6506
     - _CloudUp: 6500
