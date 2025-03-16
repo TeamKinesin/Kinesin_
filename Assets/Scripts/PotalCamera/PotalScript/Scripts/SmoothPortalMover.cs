@@ -8,6 +8,11 @@ public class SmoothPortalMover : MonoBehaviour
     public Transform inPortal;        // 입구 포탈 Transform
     public Transform outPortal;       // 출구 포탈 Transform
 
+    public SunChange sunchange;
+
+    public GameObject tutorialZoneOff;
+
+
     [Header("이동 시간 (초)")]
     public float moveDuration = 1.0f; // 포탈을 통과하는 동안 걸리는 시간
 
@@ -71,9 +76,10 @@ public class SmoothPortalMover : MonoBehaviour
     // 박스콜라이더와 충돌하면 자동으로 MoveThroughPortal()을 호출합니다.
     void OnTriggerEnter(Collider other)
     {
-        if (other == portalCollider)
-        {
+        if (other == portalCollider){
             MoveThroughPortal();
+            sunchange.ChangeSun();
+            tutorialZoneOff.SetActive(false);
         }
     }
 }

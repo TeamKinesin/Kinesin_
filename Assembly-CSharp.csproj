@@ -74,6 +74,7 @@
     <Compile Include="Assets\DownloadAsset\VolumetricLights\Demos\Minimal\Scripts\ObjectRotate.cs" />
     <Compile Include="Assets\Scripts\UnityAction\Deligate.cs" />
     <Compile Include="Assets\Scripts\ShareMaterial\ShareMaterial.cs" />
+    <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\3 Main\SunChange.cs" />
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\Point.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\3 Main\Step1MainEvent.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\PortalPlacement.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\Crosshair.cs" />
     <Compile Include="Assets\FlatKit\Demos\Common\Scripts\AutoLoadPipelineAsset.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\PaletteColor.cs" />
+    <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\3 Main\Teleport.cs" />
     <Compile Include="Assets\Scripts\PotalCamera\PotalScript\Scripts\PortalCamera.cs" />
     <Compile Include="Assets\Scripts\SonarFx\SonarFxTest.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\ChangeColor.cs" />
@@ -136,6 +138,7 @@
     <Compile Include="Assets\DownloadAsset\PDollar\Scripts\PDollarGestureRecognizer\Geometry.cs" />
     <Compile Include="Assets\DownloadAsset\WaterWorks\Scripts\Water_Volume.cs" />
     <Compile Include="Assets\Scripts\3DPenDrawing\Test c#\MeshPenPixelEraser.cs" />
+    <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\3 Main\Step2MainEventController.cs" />
     <Compile Include="Assets\DownloadAsset\Kino\Glitch\Postprocess\AnalogGlitchPostprocess.cs" />
     <Compile Include="Assets\Scripts\1 CollectionOfStep-by-stepScripts\2 Tutorial\Step4TextStart2.cs" />
     <Compile Include="Assets\Material\8K Skybox Pack Free\Example Scenes\Script\RotateCamera.cs" />
@@ -154,6 +157,7 @@
     <None Include="Assets\INab Studio\Stylized Assets\Toon Pro\Core\Shader\Toon Pro.shader" />
     <None Include="Assets\Scripts\PotalCamera\PotalScript\Shaders\Stencil.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Modeling\realrealrealmap\ceiling\CeilingManual.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-exclamation_point-01.xml" />
     <None Include="Assets\FlatKit\Shaders\StylizedSurface\LibraryUrp\LitForwardPass_DR.hlsl" />
@@ -254,6 +258,7 @@
     <None Include="Assets\DownloadAsset\WaterWorks\Shaders\Water_Volume.hlsl" />
     <None Include="Assets\FlatKit\Shaders\StylizedSurface\TerrainLitAdd_DR.shader" />
     <None Include="Assets\DownloadAsset\PDollar\Resources\GestureSet\10-stylus-MEDIUM\10-stylus-medium-P-01.xml" />
+    <None Include="Assets\Modeling\realrealrealmap\Pipe\PipeManual.txt" />
     <None Include="Assets\Scripts\SonarFx\SonarFx\Shader\SonarFx.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Shaders\Include\Hdr.cginc" />
